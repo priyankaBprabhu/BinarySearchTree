@@ -1,6 +1,6 @@
 package com.bridgelabs.binarysearchtree;
 
-public interface IBinarySearchTree {
-
+public interface IBinarySearchTree<K > {
+    void add(K key);
 
 }
