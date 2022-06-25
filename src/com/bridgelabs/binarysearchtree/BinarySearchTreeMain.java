@@ -8,7 +8,9 @@ public class BinarySearchTreeMain {
         binary.add(56);
         binary.add(30);
         binary.add(70);
-
+        binary.add(200);
+        binary.add(5);
+        System.out.println("Size = " + binary.size());
         System.out.println(binary);
 
     }

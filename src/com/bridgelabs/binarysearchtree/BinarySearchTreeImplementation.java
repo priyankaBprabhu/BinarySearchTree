@@ -9,6 +9,16 @@ public class BinarySearchTreeImplementation<K extends Comparable> implements IBi
 
     }
 
+    @Override
+    public int size() {
+        return getSizeRecursively(root);
+    }
+
+    private int getSizeRecursively(Node<K> root) {
+        return root == null ? 0 : 1 + getSizeRecursively(root.left) + getSizeRecursively(root.right);
+    }
+
+
     private Node<K> addRecursively(Node<K> current, K key) {
         if (current == null)
             return new Node<>(key);
